@@ -26,7 +26,7 @@ def random_face():
   eye1 = random_eye()
   mouth = random_mouth()
   eye2 = random_eye()
-  spaces = [random.choice([' ', '']) for x in range(4)]
+  spaces = [random.choice(['   ', '  ', ' ', '']) for x in range(4)]
   feeling = random_feeling()
   return cheeks[0] + spaces[0] + eye1 + spaces[1] + mouth + spaces[2] + eye2 + spaces[3] + cheeks[1] + feeling
 
